@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardano Constitution Reader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1>Cardano Constitution Reader</h1>
+            <div class="header-controls"> 
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search the constitution...">
+                    <button id="clearSearch">Clear</button>
+                </div>
+             
+                <button id="clearChecklistButton" title="Clear all checklist selections">Clear Checklist</button>
+            </div>
+           
+            <button id="toggleTocButton" class="mobile-only">☰ Contents</button>
+        </header>
+
+        <div class="main-layout">
+            <nav id="tocContainer" class="toc-sidebar">
+                <h2>Contents</h2>
+                <ul id="tocList">
+                    <li>Loading...</li>
+                </ul>
+            </nav>
+
+            <main id="constitutionContent" class="content-area">
+                Loading Constitution...
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
